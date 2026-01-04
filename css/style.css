@@ -1,0 +1,154 @@
+/* style.css - Anvea Artify Boutique Look */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff8f6;
+    color: #2d1a1a;
+}
+
+header {
+    background: #ffe4ec;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #f7c6d9;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    color: #a85c7a;
+}
+
+nav a {
+    color: #a85c7a;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    margin: 2.5rem 1rem 2rem 1rem;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2.2rem;
+    background: #a85c7a;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.shop-btn:hover {
+    background: #7c3a54;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 8px #f7c6d9;
+    padding: 1.2rem;
+    width: 260px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px #e6a5c7;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    margin: 0.2rem 0 0.8rem 0;
+    color: #a85c7a;
+    font-size: 1rem;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #7c3a54;
+    font-size: 1.1rem;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.product-actions button,
+.product-actions a {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: #a85c7a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.product-actions button:hover,
+.product-actions a:hover {
+    background: #7c3a54;
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    background: #ffe4ec;
+    color: #a85c7a;
+    font-size: 1rem;
+    border-top: 2px solid #f7c6d9;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .product-card {
+        width: 90vw;
+    }
+    .intro {
+        margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+    #product-list {
+        gap: 1rem;
+    }
+}
